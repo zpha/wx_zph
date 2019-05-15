@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-cd weixingkaifa
+cd wx_zph
 mvn spring-boot:stop
 
 cd ../subscribe
