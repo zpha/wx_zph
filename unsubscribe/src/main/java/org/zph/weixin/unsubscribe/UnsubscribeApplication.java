@@ -18,9 +18,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootApplication
-@ComponentScan("org.zpha")
-@EnableJpaRepositories("org.zpha")
-@EntityScan("org.zpha")
+@ComponentScan(basePackages= {"org.zph","org.zpha"})
+@EnableJpaRepositories(basePackages= {"org.zph","org.zpha"})
+@EntityScan(basePackages= {"org.zph","org.zpha"})
 public class UnsubscribeApplication implements //
 		EventListenerConfig,
 		// 得到Spring的容器
