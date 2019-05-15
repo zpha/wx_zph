@@ -2,7 +2,7 @@
 
 mvn install
 
-cd wx_zph
+cd weixingkaifa
 mvn spring-boot:start
 
 cd ../subscribe

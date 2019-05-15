@@ -1,4 +1,4 @@
-cd wx_zph
+cd weixingkaifa
 mvn spring-boot:stop
 
 cd ..\subscribe
