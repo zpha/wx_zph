@@ -1,4 +1,4 @@
-package org.zph.weixin.unsubscribe;
+package org.zpha.weixin.unsubscribe;
 
 import org.zpha.commons.config.EventListenerConfig;
 import org.zpha.commons.domain.event.EventInMessage;
@@ -18,9 +18,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "org.zph", "org.zpha" })
-@EnableJpaRepositories(basePackages = { "org.zph", "org.zpha" })
-@EntityScan(basePackages = { "org.zph", "org.zpha" })
+@ComponentScan("org.zpha")
+@EnableJpaRepositories("org.zpha")
+@EntityScan("org.zpha")
 public class UnsubscribeApplication implements //
 		EventListenerConfig,
 		// 得到Spring的容器

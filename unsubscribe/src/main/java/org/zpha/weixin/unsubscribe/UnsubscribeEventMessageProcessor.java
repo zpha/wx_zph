@@ -1,4 +1,4 @@
-package org.zph.weixin.unsubscribe;
+package org.zpha.weixin.unsubscribe;
 
 import java.util.Date;
 
