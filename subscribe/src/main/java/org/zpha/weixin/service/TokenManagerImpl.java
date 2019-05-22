@@ -8,13 +8,13 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.nio.charset.Charset;
 
+import org.zpha.commons.domain.ResponseError;
+import org.zpha.commons.domain.ResponseMessage;
+import org.zpha.commons.domain.ResponseToken;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.zpha.commons.domain.ResponseError;
-import org.zpha.commons.domain.ResponseMessage;
-import org.zpha.commons.domain.ResponseToken;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -36,7 +36,7 @@ public class TokenManagerImpl implements TokenManager {
 
 		String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential"//
 				+ "&appid=" + appid//
-				+ "&appsecret=" + appsecret;
+				+ "&secret=" + appsecret;
 
 		HttpClient hc = HttpClient.newBuilder()//
 				.version(Version.HTTP_1_1)// HTTP的协议版本号
