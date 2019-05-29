@@ -1,4 +1,4 @@
-package org.zpha.weixin.service;
+package org.zpha.commons.service;
 
 public interface TokenManager {
 	/**
