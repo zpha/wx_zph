@@ -4,7 +4,7 @@ import org.zpha.commons.domain.User;
 import org.zpha.commons.domain.event.EventInMessage;
 import org.zpha.commons.processors.EventMessageProcessor;
 import org.zpha.commons.repository.UserRepository;
-import org.zpha.weixin.service.WeixinProxy;
+import org.zpha.commons.service.WeixinProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
